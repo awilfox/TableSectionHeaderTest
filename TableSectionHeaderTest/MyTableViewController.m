@@ -44,15 +44,11 @@
 {
 	[super viewDidLoad];
 	
-	exampleView = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, [[self tableView] frame].size.width, 36.0)];
-	[exampleView setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.2 alpha:1.0]];
-	[exampleView setText:@"Hello"];
-	[exampleView setTextColor:[UIColor whiteColor]];
-	[exampleView setUserInteractionEnabled:YES];
+	exampleView = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Hello", @"World", nil]];
+	[exampleView setFrame:CGRectMake(0.0, 0.0, [[self tableView] frame].size.width, 36.0)];
+	[exampleView setSelectedSegmentIndex:0];
 	
-	UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(helloTapped:)];
-	[exampleView addGestureRecognizer:gesture];
-	[gesture release];
+	[exampleView addTarget:self action:@selector(helloTapped:) forControlEvents:UIControlEventValueChanged];
 	
 	[[self tableView] setSectionFooterHeight:36.0];
 }

@@ -11,7 +11,7 @@
 @interface MyTableViewController : UITableViewController {
 	NSArray *cellContents;
 	
-	UILabel *exampleView;
+	UISegmentedControl *exampleView;
 }
 
 @property (retain) NSArray *cellContents;
