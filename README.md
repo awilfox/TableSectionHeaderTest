@@ -6,6 +6,6 @@ This looks fine:
 
 Until a section reload, when it turns to this:
 
-![After section reload](/CorgiDude/TableSectionHeaderTest/raw/master/TableSectionHeaderTest/before-reload.png)
+![After section reload](/CorgiDude/TableSectionHeaderTest/raw/master/TableSectionHeaderTest/after-reload.png)
 
 iOS 5.x does not seem affected.
