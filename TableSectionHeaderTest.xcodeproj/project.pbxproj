@@ -13,6 +13,7 @@
 		9E6AEF55157538D300BF4C79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E6AEF53157538D300BF4C79 /* InfoPlist.strings */; };
 		9E6AEF57157538D300BF4C79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6AEF56157538D300BF4C79 /* main.m */; };
 		9E6AEF5B157538D300BF4C79 /* TSHTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6AEF5A157538D300BF4C79 /* TSHTAppDelegate.m */; };
+		9E6AEF63157538F600BF4C79 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6AEF62157538F600BF4C79 /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		9E6AEF4A157538D300BF4C79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9E6AEF4C157538D300BF4C79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9E6AEF4E157538D300BF4C79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9E6AEF52157538D300BF4C79 /* TableSectionHeaderTest-Info.plist */ = {isa = PBXFileReference; path = "TableSectionHeaderTest-Info.plist"; sourceTree = "<group>"; };
+		9E6AEF52157538D300BF4C79 /* TableSectionHeaderTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableSectionHeaderTest-Info.plist"; sourceTree = "<group>"; };
 		9E6AEF54157538D300BF4C79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E6AEF56157538D300BF4C79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9E6AEF58157538D300BF4C79 /* TableSectionHeaderTest-Prefix.pch */ = {isa = PBXFileReference; path = "TableSectionHeaderTest-Prefix.pch"; sourceTree = "<group>"; };
-		9E6AEF59157538D300BF4C79 /* TSHTAppDelegate.h */ = {isa = PBXFileReference; path = TSHTAppDelegate.h; sourceTree = "<group>"; };
+		9E6AEF58157538D300BF4C79 /* TableSectionHeaderTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableSectionHeaderTest-Prefix.pch"; sourceTree = "<group>"; };
+		9E6AEF59157538D300BF4C79 /* TSHTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHTAppDelegate.h; sourceTree = "<group>"; };
 		9E6AEF5A157538D300BF4C79 /* TSHTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHTAppDelegate.m; sourceTree = "<group>"; };
+		9E6AEF61157538F600BF4C79 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		9E6AEF62157538F600BF4C79 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				9E6AEF59157538D300BF4C79 /* TSHTAppDelegate.h */,
 				9E6AEF5A157538D300BF4C79 /* TSHTAppDelegate.m */,
 				9E6AEF51157538D300BF4C79 /* Supporting Files */,
+				9E6AEF61157538F600BF4C79 /* MyTableViewController.h */,
+				9E6AEF62157538F600BF4C79 /* MyTableViewController.m */,
 			);
 			path = TableSectionHeaderTest;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			files = (
 				9E6AEF57157538D300BF4C79 /* main.m in Sources */,
 				9E6AEF5B157538D300BF4C79 /* TSHTAppDelegate.m in Sources */,
+				9E6AEF63157538F600BF4C79 /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +226,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSectionHeaderTest/TableSectionHeaderTest-Prefix.pch";
 				INFOPLIST_FILE = "TableSectionHeaderTest/TableSectionHeaderTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -231,6 +238,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableSectionHeaderTest/TableSectionHeaderTest-Prefix.pch";
 				INFOPLIST_FILE = "TableSectionHeaderTest/TableSectionHeaderTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
