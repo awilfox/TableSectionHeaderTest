@@ -2,10 +2,10 @@
 
 This looks fine:
 
-![Before section reload](/before-reload.png)
+![Before section reload](TableSectionHeaderTest/before-reload.png)
 
 Until a section reload, when it turns to this:
 
-![After section reload](/after-reload.png)
+![After section reload](TableSectionHeaderTest/after-reload.png)
 
 iOS 5.x does not seem affected.
